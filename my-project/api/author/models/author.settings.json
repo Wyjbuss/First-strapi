@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authors",
+  "info": {
+    "name": "author",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "displayName": {
+      "type": "string",
+      "required": true,
+      "default": "Anonyms"
+    },
+    "posts": {
+      "collection": "posts",
+      "via": "author"
+    }
+  }
+}
